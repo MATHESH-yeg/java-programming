@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        double sal = sc.nextInt();
+        if(sal>=15000){
+            sal = sal+5000+(sal*0.98);
+        }
+        else{
+            sal = sal+(sal*0.15)+(sal*0.90);
+        }
+        System.out.printf("%.2f",sal);
+    }
+}
