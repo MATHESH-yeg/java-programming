@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        if(a>99 && a<1000){
+            int first = a/100;
+            int second = a%10;
+                if(first==second){
+                System.out.println("palindrome");
+                }
+                else{
+                System.out.println("not palindrome");
+                }
+        }
+        else{
+            System.out.println("Invalid Input");
+        }
+        
+    }
+}
