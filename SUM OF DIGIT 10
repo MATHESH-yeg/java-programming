@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        int num=sc.nextInt();
+        int n;
+        int sum=0;
+        if(num>99){
+        for(int i=0;i<num;i++){
+                n=num%10;
+                sum=sum+n;
+                num=num/10;
+            }
+            System.out.println("Sum of digit is "+(sum+1));
+        }
+        else{
+            System.out.println("Invalid Input");
+        }  
+    }
+}
