@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int acc=sc.nextInt(),pro=sc.nextInt();
+        int dep,with;
+       if(pro<1 || pro>2){
+           System.out.println("Invalid Input");
+       }
+        else if(pro==2){
+            with=sc.nextInt();
+            if(with>acc){
+                System.out.println("Insufficient Balance");
+            }
+            else{
+                acc=acc-with;
+                System.out.println(acc);
+            }
+        }
+        else{
+            dep=sc.nextInt();
+            acc=acc+dep;
+            System.out.println(acc);
+        }
+    }
+}
