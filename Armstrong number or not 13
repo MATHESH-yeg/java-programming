@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        int res, sum=0 ;
+        int y=num;
+        if(num>=100 && num<=999){
+            while(num>0){
+                res=num%10;
+                sum+=Math.pow(res,3);
+                num=num/10; 
+            }
+            if(y==sum){
+                System.out.println("Yes");
+            }
+            else{
+                System.out.println("No");
+            }
+        }
+        else{
+                System.out.println("No");
+            }
+        
+    }
+}
