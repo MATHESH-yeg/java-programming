@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner (System.in);
+        int n = sc.nextInt(), m=sc.nextInt();
+        int fib1=0 , fib2=1, fib3=0,sum=0;
+        // System.out.print(fib1 +" "+fib2+" ");
+        if(n>1 && n<20 && m>1 && m<20){
+                for(int i=1;i<=m;i++){
+                    if(i>=n){
+                        sum+=fib1;
+                    }
+                    fib3=fib1+fib2;
+                    fib1=fib2;
+                    fib2=fib3; 
+                }
+            System.out.println("The Sum of Fibonacci value is "+sum+".0");
+            }
+        else{
+            System.out.println("Invalid Input");
+        }
+    
+    }
+}
